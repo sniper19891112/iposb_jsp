@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN" "http://tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+	
+	中文教學：http://blog.lyhdev.com/2011/04/urlrewritefilter-javaee-web-application.html
+
+-->
+<urlrewrite>
+	<!-- 
+	<rule>
+        <name>seo redirect</name>
+        <condition name="host" operator="notequal">^iposb.com</condition>
+        <condition name="host" operator="notequal">^localhost</condition>
+        <condition name="host" operator="notequal">^192.168.1.73</condition>
+        <from>^/(.*)</from>
+        <to type="permanent-redirect" last="true">http://iposb.com/$1</to>
+    </rule>
+     -->	
+     
+	<!-- event -->
+	<rule>
+		<from>^/event-([0-9]+)$</from>
+		<to>/events?actionType=details&amp;eid=$1</to>
+	</rule>
+	
+	<!-- bulletin -->
+	<rule>
+		<from>^/bulletin-([0-9]+)$</from>
+		<to>/bulletin?actionType=details&amp;bid=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPickup$</from>
+		<to>/pickup</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpCode$</from>
+		<to>/code?actionType=dbcodes</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpFaq$</from>
+		<to>/faq?actionType=cpfaq</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_partner$</from>
+		<to>/pricing?actionType=cpPricing_partner</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_normal_parcel$</from>
+		<to>/pricing?actionType=cpPricing_normal_parcel</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_normal_document$</from>
+		<to>/pricing?actionType=cpPricing_normal_document</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_credit_parcel$</from>
+		<to>/pricing?actionType=cpPricing_credit_parcel</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_credit_document$</from>
+		<to>/pricing?actionType=cpPricing_credit_document</to>
+	</rule>
+	
+	<!-- 
+	<rule>
+		<from>^/cpPricing_express$</from>
+		<to>/pricing?actionType=cpPricing_express</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_semiexpress$</from>
+		<to>/pricing?actionType=cpPricing_semiexpress</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_courier$</from>
+		<to>/pricing?actionType=cpPricing_courier</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPricing_cargo$</from>
+		<to>/pricing?actionType=cpPricing_cargo</to>
+	</rule>
+	 -->
+	
+	<rule>
+		<from>^/cpTips$</from>
+		<to>/tips?actionType=cptips</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpEvent$</from>
+		<to>/events?actionType=cpevents</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpBulletin$</from>
+		<to>/bulletin?actionType=cpbulletin</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPrivilege$</from>
+		<to>/privilege?actionType=cpprivilege</to>
+	</rule>	
+	
+	<rule>
+		<from>^/cpAdv$</from>
+		<to>/adv?actionType=cpadv</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpMember$</from>
+		<to>/logon?actionType=cpmember</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpStaff$</from>
+		<to>/logon?actionType=cpstaff</to>
+	</rule>
+	
+	<rule>
+		<from>^/joinconsignment$</from>
+		<to>/consignment?actionType=joinConsignment</to>
+	</rule>
+	
+	<rule>
+		<from>^/pending$</from>
+		<to>/consignment?actionType=pending</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpCalendar$</from>
+		<to>/consignment?actionType=calendarView</to>
+	</rule>
+	
+	<rule>
+		<from>^/amountLog$</from>
+		<to>/log?actionType=changeAmount</to>
+	</rule>
+
+	<!-- My Consignment -->
+	<rule>
+		<from>^/my-page-([0-9]+)$</from>
+		<to>/my?page=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/myConsignment$</from>
+		<to>/my?actionType=myConsignment</to>
+	</rule>
+
+	<rule>
+		<from>^/myConsignment-([a-zA-Z0-9]+)$</from>
+		<to>/my?actionType=searchMyConsignment&amp;consignmentNo=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/create$</from>
+		<to>/consignment?actionType=create</to>
+	</rule>
+	
+	
+	<!-- Agent CP -->
+	<rule>
+		<from>^/agentCP$</from>
+		<to>/partner/index_agent.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/agentCpConsignment$</from>
+		<to>/partner?actionType=partnerConsignment</to>
+	</rule>
+	
+	<rule>
+		<from>^/agentStation$</from>
+		<to>/consignment?actionType=agentStation</to>
+	</rule>
+	
+	<rule>
+		<from>^/agentJoinConsignment$</from>
+		<to>/consignment?actionType=agentJoinConsignment</to>
+	</rule>
+	
+	<rule>
+		<from>^/agentCpPickup$</from>
+		<to>/pickup</to>
+	</rule>
+	
+	<!-- Partner CP -->
+	<rule>
+		<from>^/partnerCP$</from>
+		<to>/partner/index_partner.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerCpConsignment$</from>
+		<to>/partner?actionType=partnerConsignment</to>
+	</rule>
+	
+	<rule>
+		<from>^/pendingConsignment$</from>
+		<to>/partner?actionType=pending</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerDeliveryReport$</from>
+		<to>/report?actionType=deliveryReport</to>
+	</rule>
+	
+	
+	<!-- others -->
+	
+	<rule>
+		<from>^/login$</from>
+		<to>/login.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/stafflogin$</from>
+		<to>/loginStaff.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerlogin$</from>
+		<to>/loginPartner.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/staffLogin$</from>
+		<to>/logon?actionType=stafflogin</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerLogin$</from>
+		<to>/partner?actionType=partnerlogin</to>
+	</rule>
+	
+	<rule>
+		<from>^/logout$</from>
+		<to>/logon?actionType=logout</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerLogout$</from>
+		<to>/partner?actionType=partnerlogout</to>
+	</rule>
+	<rule>
+		<from>^/company-([0-9]+)$</from>
+		<to>/tours?actionType=companyinfo&amp;cid=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/join$</from>
+		<to>/partner?actionType=registerPartner</to>
+	</rule>
+	
+	<rule>
+		<from>^/register$</from>
+		<to>/logon?actionType=registernow</to>
+	</rule>
+	
+	<rule>
+		<from>^/registerStaff$</from>
+		<to>/logon?actionType=registernow&amp;role=staff</to>
+	</rule>
+		
+	<rule>
+		<from>^/activateAccount$</from>
+		<to>/logon?actionType=activateAccount</to>
+	</rule>	
+		
+	<rule>
+		<from>^/activateAccount&amp;email=([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+)&amp;verify=([a-zA-Z0-9]+)$</from>
+		<to>/logon?actionType=activateAccount&amp;email=$1&amp;verify=$2</to>
+	</rule>
+	
+	<rule>
+		<from>^/profile$</from>
+		<to>/logon?actionType=profile</to>
+	</rule>
+	
+	<rule>
+		<from>^/staffprofile$</from>
+		<to>/logon?actionType=staffprofile</to>
+	</rule>
+	
+	<rule>
+		<from>^/companyprofile$</from>
+		<to>/partner?actionType=companyprofile</to>
+	</rule>
+	
+	<rule>
+		<from>^/password$</from>
+		<to>/logon?actionType=changepassword</to>
+	</rule>
+	
+	<rule>
+		<from>^/changepass$</from>
+		<to>/partner?actionType=changepass</to>
+	</rule>
+	
+	<rule>
+		<from>^/draft$</from>
+		<to>/consignment?actionType=draft</to>
+	</rule>
+	
+	<rule>
+		<from>^/editDraft-([a-zA-Z0-9]+)$</from>
+		<to>/consignment?actionType=editdraft&amp;verify=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/addressbook$</from>
+		<to>/my?actionType=addressbook</to>
+	</rule>
+	
+	<rule>
+		<from>^/addAddressbook$</from>
+		<to>/my?actionType=newaddressbook</to>
+	</rule>
+	
+	<rule>
+		<from>^/editAddressbook-([a-zA-Z0-9]+)$</from>
+		<to>/my?actionType=editaddressbook&amp;verify=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/creditaccount$</from>
+		<to>/my?actionType=creditaccount</to>
+	</rule>
+	
+	<rule>
+		<from>^/addCreditaccount$</from>
+		<to>/my?actionType=newcreditaccount</to>
+	</rule>
+	
+	<rule>
+		<from>^/editCreditaccount-([a-zA-Z0-9]+)$</from>
+		<to>/my?actionType=editcreditaccount&amp;verify=$1</to>
+	</rule>
+	
+	<rule>
+		<from>^/finishTransaction$</from>
+		<to>/consignment?actionType=transaction</to>
+	</rule>
+	
+	<rule>
+		<from>^/search$</from>
+		<to>/search.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/station$</from>
+		<to>/consignment?actionType=station</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpPartner$</from>
+		<to>/partner?actionType=cppartner</to>
+	</rule>
+	
+	<rule>
+		<from>^/cronjob$</from>
+		<to>/cronjob.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/contact$</from>
+		<to>/contactUs.jsp</to>
+	</rule>
+
+	<rule>
+		<from>^/zone$</from>
+		<to>/area?actionType=dbzone</to>
+	</rule>
+
+	<rule>
+		<from>^/status$</from>
+		<to>/status.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/bookingProcedure$</from>
+		<to>/bookingProcedure.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/transaction$</from>
+		<to>/transaction.jsp</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpService$</from>
+		<to>/service?actionType=cpservice_edit</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpAbout$</from>
+		<to>/about?actionType=cpaboutUs_edit</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpTerm$</from>
+		<to>/terms?actionType=cpterm_edit</to>
+	</rule>
+	
+	<rule>
+		<from>^/cpHowitworks$</from>
+		<to>/howitworks?actionType=cphowitworks_edit</to>
+	</rule>
+	
+	<rule>
+		<from>^/accountMaintain$</from>
+		<to>/account?actionType=accountMaintain</to>
+	</rule>
+	
+	<rule>
+		<from>^/gst$</from>
+		<to>/account?actionType=gst</to>
+	</rule>
+
+	
+	<rule>
+		<from>^/settlement$</from>
+		<to>/account?actionType=settlement</to>
+	</rule>
+	
+	<rule>
+		<from>^/invoice$</from>
+		<to>/account?actionType=invoice</to>
+	</rule>
+	
+	<rule>
+		<from>^/posStatement$</from>
+		<to>/account?actionType=posStatement</to>
+	</rule>
+	
+	<rule>
+		<from>^/price$</from>
+		<to>/pricing?actionType=checkprice</to>
+	</rule>
+	
+	<rule>
+		<from>^/runsheetreport$</from>
+		<to>/report?actionType=runsheetReport</to>
+	</rule>
+	
+	<rule>
+		<from>^/partnerreport$</from>
+		<to>/report?actionType=partnerReport</to>
+	</rule>
+	
+	<rule>
+		<from>^/salesreport$</from>
+		<to>/report?actionType=salesReport</to>
+	</rule>
+	
+	<rule>
+		<from>^/memberreport$</from>
+		<to>/report?actionType=memberReport</to>
+	</rule>
+	
+	
+	<!-- Apps -->
+	
+	<rule>
+		<from>^/appLogin$</from>
+		<to>/logon?actionType=applogin</to>
+	</rule>
+	
+	<rule>
+		<from>^/appUpdatePassword$</from>
+		<to>/logon?actionType=appupdatePassword</to>
+	</rule>
+	
+	<rule>
+		<from>^/appHandlingStage$</from>
+		<to>/consignment?actionType=appHandlingStage</to>
+	</rule>
+	
+	<rule>
+		<from>^/appHandlingPending$</from>
+		<to>/consignment?actionType=appHandlingPending</to>
+	</rule>
+	
+	<rule>
+		<from>^/appUpdateConsignment$</from>
+		<to>/consignment?actionType=appUpdateConsignment</to>
+	</rule>
+	
+	<rule>
+		<from>^/appAjaxGenerateCN$</from>
+		<to>/consignment?actionType=appAjaxGenerateCN</to>
+	</rule>
+
+	<rule>
+		<from>^/appGetPickupRequest$</from>
+		<to>/pickup?actionType=appGetPickupRequest</to>
+	</rule>
+
+	<rule>
+		<from>^/appAnswerRequest$</from>
+		<to>/pickup?actionType=appAnswerRequest</to>
+	</rule>
+
+    <!--
+
+    INSTALLATION
+
+        in your web.xml add...
+
+        <filter>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+            <init-param>
+                <param-name>logLevel</param-name>
+                <param-value>WARN</param-value>
+            </init-param>
+        </filter>
+        <filter-mapping>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+     EXAMPLES
+
+     Redirect one url
+        <rule>
+            <from>/some/old/page.html</from>
+            <to type="redirect">/very/new/page.html</to>
+        </rule>
+
+    Redirect a directory
+        <rule>
+            <from>/some/olddir/(.*)</from>
+            <to type="redirect">/very/newdir/$1</to>
+        </rule>
+
+    Clean a url
+        <rule>
+            <from>/products/([0-9]+)</from>
+            <to>/products/index.jsp?product_id=$1</to>
+        </rule>
+    eg, /products/1234 will be passed on to /products/index.jsp?product_id=1234 without the user noticing.
+
+    Browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <from>/some/page.html</from>
+            <to>/some/page-for-old-browsers.html</to>
+        </rule>
+    eg, will pass the request for /some/page.html on to /some/page-for-old-browsers.html only for older
+    browsers whose user agent srtings match Mozilla/1, Mozilla/2, Mozilla/3 or Mozilla/4.
+
+    Centralised browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <set type="request" name="browser">moz</set>
+        </rule>
+    eg, all requests will be checked against the condition and if matched
+    request.setAttribute("browser", "moz") will be called.
+
+    -->
+
+</urlrewrite>
+

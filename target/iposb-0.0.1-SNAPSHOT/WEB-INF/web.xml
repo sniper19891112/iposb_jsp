@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="IPOSB" version="3.0">
+  <display-name>ROOT</display-name>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.jsp</location>
+  </error-page>
+
+
+<!--  <listener>-->
+<!--	<listener-class>com.iposb.utils.TimerMachine</listener-class>-->
+<!--  </listener>-->
+
+<!--  <listener>-->
+<!--	<listener-class>com.iposb.utils.FirebaseCloudMessaging</listener-class>-->
+<!--  </listener>-->
+
+<!--  <listener>-->
+<!--	<listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>-->
+<!--  </listener>-->
+
+<!--  <filter>-->
+<!--	<filter-name>ShiroFilter</filter-name>-->
+<!--	<filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>-->
+<!--  </filter>-->
+<!--  <filter-mapping>-->
+<!--	<filter-name>ShiroFilter</filter-name>-->
+<!--	<url-pattern>/*</url-pattern>-->
+<!--	<dispatcher>REQUEST</dispatcher>-->
+<!--	<dispatcher>FORWARD</dispatcher>-->
+<!--	<dispatcher>INCLUDE</dispatcher>-->
+<!--	<dispatcher>ERROR</dispatcher>-->
+<!--  </filter-mapping>-->
+
+
+<!--  <filter>-->
+<!--    <filter-name>UrlRewriteFilter</filter-name>-->
+<!--    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>-->
+<!--  </filter>-->
+<!--  <filter-mapping>-->
+<!--    <filter-name>UrlRewriteFilter</filter-name>-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--    <dispatcher>REQUEST</dispatcher>-->
+<!--    <dispatcher>FORWARD</dispatcher>-->
+<!--  </filter-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Logon</servlet-name>-->
+<!--    <servlet-class>com.iposb.logon.LogonController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Logon</servlet-name>-->
+<!--    <url-pattern>/logon</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--   <servlet>-->
+<!--    <servlet-name>PartnerLogon</servlet-name>-->
+<!--    <servlet-class>com.iposb.partner.PartnerController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>PartnerLogon</servlet-name>-->
+<!--    <url-pattern>/partnerlogon</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+  <servlet>
+    <servlet-name>About</servlet-name>
+    <servlet-class>com.iposb.about.AboutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>About</servlet-name>
+    <url-pattern>/about</url-pattern>
+  </servlet-mapping>
+
+<!--  <servlet>-->
+<!--    <servlet-name>Term</servlet-name>-->
+<!--    <servlet-class>com.iposb.term.TermController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Term</servlet-name>-->
+<!--    <url-pattern>/terms</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Howitworks</servlet-name>-->
+<!--    <servlet-class>com.iposb.howitworks.HowitworksController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Howitworks</servlet-name>-->
+<!--    <url-pattern>/howitworks</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Service</servlet-name>-->
+<!--    <servlet-class>com.iposb.service.ServiceController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Service</servlet-name>-->
+<!--    <url-pattern>/service</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Pickup</servlet-name>-->
+<!--    <servlet-class>com.iposb.pickup.PickupController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Pickup</servlet-name>-->
+<!--    <url-pattern>/pickup</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Code</servlet-name>-->
+<!--    <servlet-class>com.iposb.code.CodeController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Code</servlet-name>-->
+<!--    <url-pattern>/code</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>My</servlet-name>-->
+<!--    <servlet-class>com.iposb.my.MyController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>My</servlet-name>-->
+<!--    <url-pattern>/my</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Consignment</servlet-name>-->
+<!--    <servlet-class>com.iposb.consignment.ConsignmentController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Consignment</servlet-name>-->
+<!--    <url-pattern>/consignment</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Sitemap</servlet-name>-->
+<!--    <servlet-class>com.iposb.sitemap.SitemapController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Sitemap</servlet-name>-->
+<!--    <url-pattern>/sitemap</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Cp</servlet-name>-->
+<!--    <servlet-class>com.iposb.privilege.PrivilegeController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Cp</servlet-name>-->
+<!--    <url-pattern>/cp</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Pdf</servlet-name>-->
+<!--    <servlet-class>com.iposb.pdf.PdfController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Pdf</servlet-name>-->
+<!--    <url-pattern>/pdf</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Report</servlet-name>-->
+<!--    <servlet-class>com.iposb.report.ReportController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Report</servlet-name>-->
+<!--    <url-pattern>/report</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Utils</servlet-name>-->
+<!--    <servlet-class>com.iposb.utils.UtilsController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Utils</servlet-name>-->
+<!--    <url-pattern>/utils</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Event</servlet-name>-->
+<!--    <servlet-class>com.iposb.event.EventController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Event</servlet-name>-->
+<!--    <url-pattern>/events</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Adv</servlet-name>-->
+<!--    <servlet-class>com.iposb.adv.AdvController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Adv</servlet-name>-->
+<!--    <url-pattern>/adv</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Bulletin</servlet-name>-->
+<!--    <servlet-class>com.iposb.bulletin.BulletinController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Bulletin</servlet-name>-->
+<!--    <url-pattern>/bulletin</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Area</servlet-name>-->
+<!--    <servlet-class>com.iposb.area.AreaController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Area</servlet-name>-->
+<!--    <url-pattern>/area</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Feedback</servlet-name>-->
+<!--    <servlet-class>com.iposb.feedback.FeedbackController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Feedback</servlet-name>-->
+<!--    <url-pattern>/feedback</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Calendar</servlet-name>-->
+<!--    <servlet-class>com.iposb.calendar.EventFeed</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Calendar</servlet-name>-->
+<!--    <url-pattern>/calendar</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Enquiry</servlet-name>-->
+<!--    <servlet-class>com.iposb.utils.UtilsController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Enquiry</servlet-name>-->
+<!--    <url-pattern>/enquiry</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Customize</servlet-name>-->
+<!--    <servlet-class>com.iposb.customize.CustomizeController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Customize</servlet-name>-->
+<!--    <url-pattern>/customize</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Partner</servlet-name>-->
+<!--    <servlet-class>com.iposb.partner.PartnerController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Partner</servlet-name>-->
+<!--    <url-pattern>/partner</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Account</servlet-name>-->
+<!--    <servlet-class>com.iposb.account.AccountController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Account</servlet-name>-->
+<!--    <url-pattern>/account</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Pricing</servlet-name>-->
+<!--    <servlet-class>com.iposb.pricing.PricingController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Pricing</servlet-name>-->
+<!--    <url-pattern>/pricing</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Log</servlet-name>-->
+<!--    <servlet-class>com.iposb.log.LogController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Log</servlet-name>-->
+<!--    <url-pattern>/log</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Point</servlet-name>-->
+<!--    <servlet-class>com.iposb.point.PointController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Point</servlet-name>-->
+<!--    <url-pattern>/point</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Notification</servlet-name>-->
+<!--    <servlet-class>com.iposb.notification.NotificationController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Notification</servlet-name>-->
+<!--    <url-pattern>/notification</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Notifier</servlet-name>-->
+<!--    <servlet-class>com.iposb.notification.notifier</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Notifier</servlet-name>-->
+<!--    <url-pattern>/notifier</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Privilege</servlet-name>-->
+<!--    <servlet-class>com.iposb.privilege.PrivilegeController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Privilege</servlet-name>-->
+<!--    <url-pattern>/privilege</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>captcha</servlet-name>-->
+<!--    <servlet-class>com.iposb.utils.CaptchaServlet</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>captcha</servlet-name>-->
+<!--    <url-pattern>/captcha</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Received</servlet-name>-->
+<!--    <servlet-class>com.iposb.utils.Received</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Received</servlet-name>-->
+<!--    <url-pattern>/received</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Resource</servlet-name>-->
+<!--    <servlet-class>com.iposb.resource.ResourceController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Resource</servlet-name>-->
+<!--    <url-pattern>/resource</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>uploadFile</servlet-name>-->
+<!--    <servlet-class>com.iposb.utils.UploadFile</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>uploadFile</servlet-name>-->
+<!--    <url-pattern>/uploadFile</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Upload</servlet-name>-->
+<!--    <servlet-class>com.iposb.upload.UploadController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Upload</servlet-name>-->
+<!--    <url-pattern>/upload</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>AgentRate</servlet-name>-->
+<!--    <servlet-class>com.iposb.agentrate.AgentRateController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>AgentRate</servlet-name>-->
+<!--    <url-pattern>/agentrate</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Testimonial</servlet-name>-->
+<!--    <servlet-class>com.iposb.testimonial.TestimonialController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Testimonial</servlet-name>-->
+<!--    <url-pattern>/testimonial</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>Faq</servlet-name>-->
+<!--    <servlet-class>com.iposb.faq.FaqController</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Faq</servlet-name>-->
+<!--    <url-pattern>/faq</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--	<servlet-name>CompressServlet</servlet-name>-->
+<!--       <servlet-class>com.granule.CompressServlet</servlet-class>-->
+<!--       <load-on-startup>1</load-on-startup>-->
+<!--   </servlet>-->
+<!--   <servlet-mapping>-->
+<!--       <servlet-name>CompressServlet</servlet-name>-->
+<!--       <url-pattern>/combined.js</url-pattern>-->
+<!--   </servlet-mapping>-->
+<!--   <servlet-mapping>-->
+<!--       <servlet-name>CompressServlet</servlet-name>-->
+<!--       <url-pattern>/combined.css</url-pattern>-->
+<!--   </servlet-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>log4j-init</servlet-name>-->
+<!--    <servlet-class>com.iposb.sys.Log4jInit</servlet-class>-->
+<!--    <load-on-startup>1</load-on-startup>-->
+<!--  </servlet>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>loadServlet</servlet-name>-->
+<!--    <servlet-class>com.iposb.sys.LoadServlet</servlet-class>-->
+<!--    <load-on-startup>1</load-on-startup>-->
+<!--  </servlet>-->
+
+<!--  <listener>-->
+<!--    <listener-class>com.iposb.utils.SessionCounter</listener-class>-->
+<!--  </listener>-->
+<!--  <jsp-config>-->
+<!--    <jsp-property-group>-->
+<!--      <url-pattern>*.jsp</url-pattern>-->
+<!--      <page-encoding>UTF-8</page-encoding>-->
+<!--    </jsp-property-group>-->
+<!--  </jsp-config>-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

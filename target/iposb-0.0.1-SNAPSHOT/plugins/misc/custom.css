@@ -1,0 +1,189 @@
+/* Add here all your css styles (customizations) */
+
+.cpAvatarStyle {
+	height: 200px;
+    width: 200px;
+    position: relative;
+    border: 1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.itineraryTXT {
+	font-size: 13px;
+}
+
+.smallText
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.grayBG
+{
+	background-color: rgba(221, 221, 221, 0.48); 
+}
+
+.priceText
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+
+.showCurrency
+{
+	margin-left:3px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+.facilityLI
+{
+	width:100%;
+	min-height:200px;
+}
+
+.facilityLI li
+{
+	background:url("https://static.iposb.com/resources/common/img/facilities.jpg");
+	list-style:none;
+	float:left;
+	width:30px;
+	height:30px;
+}
+
+.facilityLI div
+{
+	width:200px;
+	height:35px;
+	float:left;
+}
+
+.facilityLI span
+{
+	white-space:nowrap;
+	padding-left:33px;
+	display:block;
+}
+
+.sticker-right,
+.sticker-left {
+  	color: #fff;
+	width: 180px;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial;
+	position: absolute;
+	text-align: center;
+	letter-spacing: 2px;
+	}
+
+ .sticker-right {
+    top: 12px;
+    right: -20px;
+    background: rgba(231, 76, 60, 1);
+    transform: rotate(30deg);   
+	-o-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+ .sticker-left {
+    top: 9px;
+    left: -48px;
+   	background: rgba(116, 197, 44, 1);
+    transform: rotate(-45deg);   
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.checklist
+{
+	width:700px;
+	background-color:#FFC;
+	margin:20px 0 20px 48px;
+	border:dashed 2px;
+	background-position:center;
+	background-repeat:no-repeat;
+	border-color:#0E426B;
+	padding:6px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*
+	TOOLTIP
+*/
+
+#tooltip
+{
+	font-family: Ubuntu, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+	line-height: 1.5;
+	color: #fff;
+	background: #333;
+	background: -webkit-gradient( linear, left top, left bottom, from( rgba( 0, 0, 0, .6 ) ), to( rgba( 0, 0, 0, .8 ) ) );
+	background: -webkit-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -moz-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -ms-radial-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -o-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-top: 1px solid #fff;
+	-webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	-moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	position: absolute;
+	z-index: 100;
+	padding: 15px;
+}
+#tooltip:after
+{
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #333;
+	border-top-color: rgba( 0, 0, 0, .7 );
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	margin-left: -10px;
+}
+#tooltip.top:after
+{
+	border-top-color: transparent;
+	border-bottom: 10px solid #333;
+	border-bottom-color: rgba( 0, 0, 0, .6 );
+	top: -20px;
+	bottom: auto;
+}
+#tooltip.left:after
+{
+	left: 10px;
+	margin: 0;
+}
+#tooltip.right:after
+{
+	right: 10px;
+	left: auto;
+	margin: 0;
+}
+
+.ellipsis {
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;        
+}

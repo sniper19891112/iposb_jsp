@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/bulletininfo.jsp=UTF-8
+encoding//WebContent/cp/cpMember.jsp=UTF-8
+encoding//WebContent/cp/cpPickupRequest.jsp=UTF-8
+encoding//WebContent/cp/cpPricing_partner.jsp=UTF-8
+encoding//WebContent/cp/cpStation.jsp=UTF-8
+encoding//WebContent/header.jsp=UTF-8
+encoding//WebContent/login.jsp=UTF-8
+encoding//WebContent/loginPartner.jsp=UTF-8
+encoding//WebContent/loginStaff.jsp=UTF-8
+encoding//WebContent/myConsignment.jsp=UTF-8
+encoding//WebContent/price.jsp=UTF-8
+encoding//WebContent/register.jsp=UTF-8
+encoding//WebContent/registerPartner.jsp=UTF-8
+encoding//src/com/iposb/logon/LogonBusinessModel.java=UTF-8
+encoding//src/com/iposb/sys/LoadServlet.java=UTF-8
+encoding/<project>=UTF-8

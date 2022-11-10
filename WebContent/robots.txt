@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+Disallow: /META-INF/
+Disallow: /WEB-INF/
+Disallow: /log/
+Disallow: /cp/
+Disallow: /etc/
+Disallow: /temp/
+Disallow: /header.jsp
+Disallow: /footer.jsp
